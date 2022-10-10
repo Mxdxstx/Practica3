@@ -4,112 +4,33 @@
     --colorAlternativo: rgb(255, 174, 0);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-
-
-/*iconos*/
-
-.icon {
-    color: var(--colorAlternativo);
-    padding: .5rem;
-    margin: .5rem;
-    border-radius: .2rem;
-    text-decoration: none;
-    margin-left: 50%;
-}
-
-.icon-facebook {
-    background: black;
-}
-
-.icon-facebook:hover {
-    background: white;
-}
-
-.icon-instagram {
-    background: black;
-}
-
-.icon-instagram:hover {
-    background: white;
-}
-
-
-/*redes*/
-
-.redes {
-    display: flex;
-    padding: 1.5rem;
-    background: var(--colorPrincipal);
-    color: white;
-}
-
-
-/*menu de navegacion*/
-
-.menu {
-    background: var(--colorAlternativo);
-    width: 100vw;
-    height: 80px;
-    font-size: 18px;
-}
-
-.menu label {
-    color: var(--colorPrincipal);
-    line-height: 80px;
-    margin-left: 20px;
-    font-weight: bolder;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.menu_horizontal {
-    float: right;
-    text-transform: uppercase;
-}
-
-.menu_horizontal li {
-    display: inline-block;
-    margin: 30px 10px;
-}
-
-.menu_horizontal li a,
-a.active {
-    color: var(--colorPrincipal);
-    color: var(--colorSecundario);
-    padding: 15px 20px;
-    border-radius: 5px;
-}
-
-.menu_horizontal li a:hover,
-a.active {
-    background: var(--colorPrincipal);
-}
-
-#check {
-    display: none;
-}
-
-.checkbtn {
-    float: right;
-    margin: 0 20px;
-    font-size: 23px;
-    display: none;
-}
-
 .comida {
-    background: pink;
-    height: 300px;
+    background: rgb(247, 198, 93);
     width: 80%;
     margin: auto;
     margin-top: 30px;
+}
+
+.cortes {
+    padding: 10px;
+    margin: 15px 15px 15px 15px;
+    border: 1px solid #000;
+    display: flex;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    width: 500px;
+    height: 400px;
+    background: var(--colorSecundario);
+    border-radius: 3%;
+    display: block;
+}
+
+.card img {
+    width: 300px;
 }
 
 @media (max-width:952px) {
