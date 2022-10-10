@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reservaciones.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font.css">
+    <script src="https://kit.fontawesome.com/0f19cc5890.js" crossorigin="anonymous"></script>
+    <title>Restaurant</title>
+</head>
+<body>
+    <header>
+        <section class="redes">
+            <label>Redes</label>
+            <div><a href="#" class="icon icon-facebook"></a></div>
+            <div><a href="#" class="icon icon-instagram"></a></div>
+        </section>
+    </header>
+
+    <section class="menu">
+        <a href="index.html">
+            <label>Restaurant</label>
+        </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+       
+        <ul class="menu_horizontal">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="reservaciones.html" class="active">Reservaciones</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </section>
+    <div class="conteForm">
+        <div class="formulario">
+            <h3>Ingrese los siguientes datos</h3><br><br>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type ="text" id="nombre" placeholder="Ingrese su nombre"/>
+                
+                <label for="tel">Teléfono</label>
+                <input type="tel" id="tel" placeholder="Ingrese su telefono"/>
+                
+                <label for="date">Fecha</label>
+                <input type="date">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

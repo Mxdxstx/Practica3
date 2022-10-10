@@ -1,0 +1,129 @@
+:root{
+    --colorPrincipal:#000;
+    --colorSecundario:#fff;
+    --colorAlternativo:rgba(219, 199, 150, 0.993);
+    --colorAlternativo2:darkcyan;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*iconos*/
+.icon{
+color:var(--colorAlternativo);
+padding: .5rem;
+margin: .5rem;
+border-radius: .2rem;
+text-decoration: none;
+margin-left: 50%;
+}
+.icon-facebook{background: black;}
+.icon-facebook:hover{background: white;}
+.icon-instagram{background: black;}
+.icon-instagram:hover{background: white;}
+
+/*redes*/
+.redes{
+    display: flex;
+    padding: 1.5rem;
+    background: var(--colorPrincipal);
+    color:white;
+}
+
+/*menu de navegacion*/
+
+.menu{
+    background: var(--colorAlternativo);
+    width: 100vw;
+    height: 80px;
+    font-size: 18px;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.137);
+}
+.menu label{
+    color: var(--colorPrincipal);
+    line-height: 80px;
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size:30px;
+    cursor: pointer;
+}
+.menu_horizontal{
+    float: right;
+}
+.menu_horizontal li{
+    display: inline-block;
+    margin: 30px 10px;
+}
+.menu_horizontal li a, a.active{
+    color: var(--colorPrincipal);
+    color: var(--colorSecundario);
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+.menu_horizontal li a:hover, a.active{
+    background: var(--colorPrincipal) ;
+}
+
+#check{
+    display: none;
+}
+.checkbtn{
+    float: right;
+    margin: 0 20px;
+    font-size: 23px;
+    display: none;
+}
+
+footer{
+    background: var(--colorPrincipal);
+    height: 300px;
+    width: 100vw;
+    color: var(--colorSecundario);
+    padding:75px 0 75px 0;
+    line-height: 50px;
+    text-align: left;
+}
+footer a{
+    color:var(--colorAlternativo2);
+}
+
+@media (max-width:952px) {
+    .menu{
+        background: var(--colorAlternativo);
+        width: 100vw;
+        height: 80px;
+        font-size: 16px;
+    }
+    
+}
+@media (max-width:874px) {
+    .checkbtn{display: block;}
+    .menu_horizontal{
+        position: fixed;
+        background: #414141;
+        height: calc(100vh - 80px);
+        width: 100vw;
+        text-align: center;
+        left: -100%;
+        transition: all .3s;
+
+    }
+    .menu_horizontal li a{
+        font-size: 20px;
+    }
+    .menu ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    #check:checked ~ .menu_horizontal{
+        left: 0;
+    }
+}

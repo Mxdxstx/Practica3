@@ -1,0 +1,11 @@
+.parrafo{
+    padding-top: 100px;
+    width: 60%;
+    margin: auto;
+    background: lightgray;
+}
+
+.parrafo p{
+    font-size: 18px;
+    text-align: justify;
+}

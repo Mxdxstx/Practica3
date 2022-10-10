@@ -1,0 +1,28 @@
+.mapa{
+    display: block;
+    width: 40%;
+    flex-direction: column;
+    margin: auto;
+}
+.mapa iframe{
+    width: 500px;
+    height: 500px;
+}
+.mapa label{
+    font-size: 20px;
+    padding: 30px;
+    display: block;
+}
+
+@media (max-width:952px){
+    .mapa iframe{
+        width: 380px;
+        height: 380px;
+    }
+}
+@media (max-width:852px){
+    .mapa iframe{
+        width: 200px;
+        height:200px;
+    }
+}
