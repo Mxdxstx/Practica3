@@ -1,10 +1,10 @@
-:root{
-    --colorPrincipal:#000;
-    --colorSecundario:#fff;
-    --colorAlternativo:rgb(255, 174, 0);
-
+:root {
+    --colorPrincipal: #000;
+    --colorSecundario: #fff;
+    --colorAlternativo: rgb(255, 174, 0);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,84 +13,119 @@
     list-style: none;
 }
 
+
 /*iconos*/
-.icon{
-color:var(--colorAlternativo);
-padding: .5rem;
-margin: .5rem;
-border-radius: .2rem;
-text-decoration: none;
-margin-left: 50%;
+
+.icon {
+    color: var(--colorAlternativo);
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: .2rem;
+    text-decoration: none;
+    margin-left: 50%;
 }
-.icon-facebook{background: black;}
-.icon-facebook:hover{background: white;}
-.icon-instagram{background: black;}
-.icon-instagram:hover{background: white;}
+
+.icon-facebook {
+    background: black;
+}
+
+.icon-facebook:hover {
+    background: white;
+}
+
+.icon-instagram {
+    background: black;
+}
+
+.icon-instagram:hover {
+    background: white;
+}
+
 
 /*redes*/
-.redes{
+
+.redes {
     display: flex;
     padding: 1.5rem;
     background: var(--colorPrincipal);
-    color:white;
+    color: white;
 }
+
 
 /*menu de navegacion*/
 
-.menu{
+.menu {
     background: var(--colorAlternativo);
     width: 100vw;
     height: 80px;
     font-size: 18px;
 }
-.menu label{
+
+.menu label {
     color: var(--colorPrincipal);
     line-height: 80px;
     margin-left: 20px;
     font-weight: bolder;
-    font-size:30px;
+    font-size: 30px;
     cursor: pointer;
 }
-.menu_horizontal{
+
+.menu_horizontal {
     float: right;
     text-transform: uppercase;
 }
-.menu_horizontal li{
+
+.menu_horizontal li {
     display: inline-block;
     margin: 30px 10px;
 }
-.menu_horizontal li a, a.active{
+
+.menu_horizontal li a,
+a.active {
     color: var(--colorPrincipal);
     color: var(--colorSecundario);
     padding: 15px 20px;
     border-radius: 5px;
 }
-.menu_horizontal li a:hover, a.active{
-    background: var(--colorPrincipal) ;
+
+.menu_horizontal li a:hover,
+a.active {
+    background: var(--colorPrincipal);
 }
 
-#check{
+#check {
     display: none;
 }
-.checkbtn{
+
+.checkbtn {
     float: right;
     margin: 0 20px;
     font-size: 23px;
     display: none;
 }
 
+.comida {
+    background: pink;
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
 @media (max-width:952px) {
-    .menu{
+    .menu {
         background: var(--colorAlternativo);
         width: 100vw;
         height: 80px;
         font-size: 16px;
     }
-    
 }
+
 @media (max-width:858px) {
-    .checkbtn{display: block;}
-    .menu_horizontal{
+    .checkbtn {
+        display: block;
+    }
+    .menu_horizontal {
         position: fixed;
         background: #414141;
         height: calc(100vh - 80px);
@@ -98,18 +133,16 @@ margin-left: 50%;
         text-align: center;
         left: -100%;
         transition: all .3s;
-
     }
-    .menu_horizontal li a{
+    .menu_horizontal li a {
         font-size: 20px;
     }
-    .menu ul li{
+    .menu ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
-
     }
-    #check:checked ~ .menu_horizontal{
+    #check:checked~.menu_horizontal {
         left: 0;
     }
 }
