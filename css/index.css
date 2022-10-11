@@ -44,7 +44,6 @@ margin-left: 50%;
 
 .menu{
     background: var(--colorAlternativo);
-    width: 100vw;
     height: 80px;
     font-size: 18px;
     box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.137);
