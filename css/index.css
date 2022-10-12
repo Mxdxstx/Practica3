@@ -134,6 +134,7 @@ margin-left: 50%;
     }
     .menu_horizontal li a{
         font-size: 20px;
+	color:white;
     }
     .menu ul li{
         display: block;
@@ -150,5 +151,8 @@ margin-left: 50%;
         background-size: 500%;
         background-attachment:fixed;
         height: 1000px;
+    }
+    #main .presentacion{
+	    font-size:100%;
     }
 }
