@@ -1,3 +1,10 @@
+
+body{
+    background-image: url(../img/fondoMenu.jpg);
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: fixed;
+}
 .parrafo{
     padding-top: 100px;
     width: 60%;

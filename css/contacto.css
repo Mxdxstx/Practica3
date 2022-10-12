@@ -1,3 +1,9 @@
+body{
+    background-image: url(../img/fondoMenu.jpg);
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: fixed;
+}
 .mapa{
     display: block;
     width: 40%;

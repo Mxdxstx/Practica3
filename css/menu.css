@@ -1,14 +1,26 @@
 :root {
     --colorPrincipal: #000;
     --colorSecundario: #fff;
-    --colorAlternativo: rgb(255, 174, 0);
+    --colorAlternativo: darkcyan;
 }
 
+body{
+    background-image: url(../img/fondoMenu.jpg);
+    background-position: center center;
+    background-repeat: none;
+    background-attachment: fixed;
+}
 .comida {
     width: 80%;
     margin: auto;
     margin-top: 30px;
     padding: 10px;
+}
+.indice li a{
+    color: darkcyan;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: underline;
 }
 
 .cortes, .mexicana, .ensaladas, .mariscos, .bebidas {
@@ -20,6 +32,10 @@
     justify-content: space-around;
     box-shadow: 0 5px 5px 0  #000;
 }
+.mexicana{background-color: rgb(252, 158, 71);}
+.ensaladas{background-color: rgb(70, 148, 74);}
+.mariscos{background-color: rgb(255, 149, 149);}
+.bebidas{ background-color: rgb(16, 34, 48);}
 .card {
     margin: 10px;
     padding: 10px;
@@ -32,7 +48,7 @@
     font-size: 20px;
 }
 
-.card img {width: 300px;}
+.card img {width: 300px; max-height: 220px;}
 
 @media (max-width:952px) {
     .menu {
@@ -77,5 +93,5 @@
         font-size: 16px;
     }
     
-    .card img {width: 200px;}
+    .card img {width: 200px; max-height: 150px;}
 }

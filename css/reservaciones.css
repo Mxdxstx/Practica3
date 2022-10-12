@@ -6,21 +6,28 @@
 
 }
 .conteForm{
-    width: 60%;
-    margin: auto;
     color:var(--colorAlternativo2);
-    margin-top: 20px;
+    padding-top: 50px;
+    background-image: url(../img/fondoReservacion.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment:fixed;
+    min-height: 800px;
 }
 .formulario{
+    background: white;
+    width: 60%;
+    margin: auto;
     padding: 10px;
-    width: calc(300px*1.2);
-    border: 1px solid #000;
+    width: calc(400px*1.2);
+    border-radius: 15px 0 15px 0;
+    box-shadow: 5px 0 5px 0 #000;
 }
 
 /*Formulario*/
 form{
     background: lightgray;
-    width: 300px;
+    width: 400px;
     border:1px solid #ccc;
     margin:20px;
     padding: 20px;
@@ -61,6 +68,9 @@ input[type="submit"]:hover{
     }
     .formulario{
         width: calc(200px*1.3);
+    }
+    .conteForm{
+        background-size: 300%;
     }
     
 }
