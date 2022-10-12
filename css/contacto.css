@@ -28,7 +28,7 @@ body{
 }
 @media (max-width:852px){
     .mapa iframe{
-        width: 200px;
-        height:200px;
+        width: 280px;
+        height:280px;
     }
 }
